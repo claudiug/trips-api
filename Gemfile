@@ -6,7 +6,8 @@ gem 'rails', '4.0.2'
 gem 'rails-api'
 gem "active_model_serializers"
 gem 'rails_12factor', group: :production
-
+gem 'foreman'
+gem 'puma'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
