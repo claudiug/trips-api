@@ -1,5 +1,5 @@
 class StatusController < ApplicationController
   def index
-    return text: 'OK'
+    render text: 'OK'
   end
 end
