@@ -17,9 +17,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: trips-api_development
+  database: trips_api_development
   pool: 5
-  username: trips-api
+  username: postgres
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -54,7 +54,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: trips-api_production
+  database: trips_api_production
   pool: 5
   username: trips-api
   password:
