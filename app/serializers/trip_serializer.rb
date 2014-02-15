@@ -1,6 +1,5 @@
 class TripSerializer < ActiveModel::Serializer
-  embed :name, include: true
-  attributes :name, :slug, :description, :url, :info, :created_at
+  attributes :name, :slug, :description, :url, :info, :created_at, :category_name, :comment_name
 
   def url
     trip_url(object)
@@ -9,4 +8,13 @@ class TripSerializer < ActiveModel::Serializer
   def info
     "#{name} - #{slug}"
   end
+
+  def category_name
+    object.category
+  end
+
+  def comment_name
+    object.comment
+  end
+
 end

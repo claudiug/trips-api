@@ -1,7 +1,10 @@
 class TripsController < ApplicationController
   def index
-    @trips = Trip.all
-    render json: @trips
+    if params[:top] == 'top'
+      render json: Trip.top
+    else
+      render json: Trip.all
+    end
   end
 
   private
