@@ -46,9 +46,9 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: trips-api_test
+  database: trips_api_development
   pool: 5
-  username: trips-api
+  username: postgres
   password:
 
 production:
