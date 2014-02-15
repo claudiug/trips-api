@@ -56,5 +56,5 @@ production:
   encoding: unicode
   database: trips_api_production
   pool: 5
-  username: trips-api
+  username:
   password:
